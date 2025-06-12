@@ -1,1 +1,31 @@
-
+openapi: 3.0.1
+info:
+  title: Rubber Dictionary API
+  description: Tra cứu từ điển chuyên ngành cao su
+  version: '1.0.0'
+servers:
+  - url: https://rubber-dictionary.onrender.com
+paths:
+  /lookup:
+    get:
+      summary: Tra từ chuyên ngành
+      parameters:
+        - name: term
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Kết quả tra cứu
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  term:
+                    type: string
+                  meaning:
+                    type: string
+        '404':
+          description: Không tìm thấy

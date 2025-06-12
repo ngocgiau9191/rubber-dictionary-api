@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Rubber Dictionary",
+  "name_for_model": "rubber_dictionary",
+  "description_for_human": "Tra cứu từ điển chuyên ngành cao su",
+  "description_for_model": "Dùng để tra nghĩa từ chuyên ngành cao su từ tiếng Anh sang tiếng Việt.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://rubber-dictionary.onrender.com/.well-known/openapi.yaml"
+  },
+  "logo_url": "https://rubber-dictionary.onrender.com/.well-known/logo.png",
+  "contact_email": "your@email.com",
+  "legal_info_url": "https://rubber-dictionary.onrender.com/.well-known/legal"
+}
